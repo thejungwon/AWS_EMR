@@ -1,5 +1,8 @@
 # AWS_EMR
 ```
+vi ~/.mrjob.conf
+```
+```
 {
   "runners": {
     "hadoop": {
