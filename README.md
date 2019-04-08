@@ -11,7 +11,7 @@ virtualenv -p python3 venv
 . venv/bin/activate
 pip install mrjob
 cp .mrjob.conf ~/.mrjob.conf
-python mr_word_freq_count.py -r hdfs:///test/actors.list hdfs:///test/output
+python mr_word_freq_count.py -r hdfs:///test/actors.list --output-dir hdfs:///test/output
 
 ```
 ```
