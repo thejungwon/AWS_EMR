@@ -10,6 +10,7 @@ hadoop fs -put actors.list /test/actors.list
 virtualenv venv
 . venv/bin/activate
 pip install mrjob
+cp .mrjob.conf ~/.mrjob.conf
 python mr_word_freq_count hdfs:///test/actors.list hdfs:///test/output
 
 ```
