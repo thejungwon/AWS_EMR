@@ -7,7 +7,7 @@ curl -L -o actors.list https://www.dropbox.com/s/vofyl0uryectfyt/actors.list\?dl
 hadoop fs -mkdir /test
 hadoop fs -put actors.list /test/actors.list
 
-virtualenv venv
+virtualenv -p python3 venv
 . venv/bin/activate
 pip install mrjob
 cp .mrjob.conf ~/.mrjob.conf
